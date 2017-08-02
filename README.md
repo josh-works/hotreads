@@ -1,24 +1,29 @@
-# README
+## Setup for FEE URL Lockbox
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+It's easy to get started using/testing this repo:
 
-Things you may want to cover:
+```shell
+# clone it down
+$ git clone git@github.com:josh-works/hotreads.git
 
-* Ruby version
+# cd into it
+$ cd hotreads
 
-* System dependencies
+# bundle install
+$ bundle
 
-* Configuration
+# setup DB
+$ rake db:create
+$ rake db:migrate
 
-* Database creation
+# seed dev environment
+$ rake db:seed
 
-* Database initialization
+# run tests
+$ rspec
 
-* How to run the test suite
+# run in localhost
+$ rails s
+```
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+That's it. Enjoy your poking around of the app!
